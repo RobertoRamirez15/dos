@@ -4,7 +4,7 @@ document.addEventListener("deviceready",function(){
 	$('#todo').on('tap', function(){
 	  $.ajax({
 		  type: "POST",
-		  url: "http://192.168.1.74/icascatalogo/buscartodos.php",
+		  url: "http://192.168.1.78/icascatalogo/buscartodos.php",
 		  error: function(){
 		   alert ("no se pudo conectar al servidor");
 		  },
