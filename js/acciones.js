@@ -1,7 +1,7 @@
 // JavaScript Document
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
-	$('#todo').on('tap',function(){
+	$('#btntodo').on('tap',function(){
 		
 	  $.ajax({
 		  type: "POST",
