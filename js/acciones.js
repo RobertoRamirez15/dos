@@ -13,7 +13,7 @@ document.addEventListener("deviceready",function(){
 		  success: function(resultado){
 			  var datosCalzado = JSON.parse(resultado);
 		    $('#contenido_calzado').empty();
-			$(':mobile-pagecontainer').pagecontainer('chage', '#PaginaMII',{
+			$(':mobile-pagecontainer').pagecontainer('chage', 'todo',{
 				trasition: 'pop'
 			});
 			
