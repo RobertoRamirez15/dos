@@ -4,16 +4,19 @@ document.addEventListener("deviceready",function(){
 	$('#todo').on('tap', function(){
 		alert ("dentro de todo");
 
+		
 	  $.ajax({
 		  type: "POST",
 		  url: "http://192.168.1.178/icascatalogo/buscartodos.php",
+		  data: "",
 		  error: function(){
 		   alert ("no se pudo conectar al servidor");
 		  },
 		  success: function(resultado){
+			  
 			  var datosCalzado = JSON.parse(resultado);
 		    $('#contenido_calzado').empty();
-			$(':mobile-pagecontainer').pagecontainer('chage', '#todo',{
+			$(':mobile-pagecontainer').pagecontainer('change', '#todo',{
 				trasition: 'pop'
 			});
 			
