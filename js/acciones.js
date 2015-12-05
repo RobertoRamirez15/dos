@@ -2,6 +2,7 @@
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
 	$('#todo').on('tap', function(){
+		alert ("dentro de todo");
 	  $.ajax({
 		  type: "POST",
 		  url: "http://192.168.1.178/icascatalogo/buscartodos.php",
