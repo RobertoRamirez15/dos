@@ -11,7 +11,7 @@ document.addEventListener("deviceready",function(){
 		   alert ("no se pudo conectar al servidor");
 		  },
 		  success: function(resultado){
-			  
+			  alert (resultado);
 			  var datosCalzado = JSON.parse(resultado);
 		    $('#contenido_calzado').empty();
 			$(':mobile-pagecontainer').pagecontainer('change', '#todo',{
