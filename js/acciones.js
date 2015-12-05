@@ -61,7 +61,7 @@ document.addEventListener("deviceready",function(){
 		
 	  $.ajax({
 		  type: "POST",
-		  url: "http://192.168.1.178/icascatalogo/buscaradidas.php",
+		  url: "http://192.168.1.178/icascatalogo/buscarnike.php",
 		  data: "modelo=adidas",
 		  error: function(){
 		   alert ("no se pudo conectar al servidor");
@@ -89,7 +89,7 @@ document.addEventListener("deviceready",function(){
 		
 	  $.ajax({
 		  type: "POST",
-		  url: "http://192.168.1.178/icascatalogo/buscarpuma.php",
+		  url: "http://192.168.1.178/icascatalogo/buscarnike.php",
 		  data: "modelo=puma",
 		  error: function(){
 		   alert ("no se pudo conectar al servidor");
@@ -117,7 +117,7 @@ document.addEventListener("deviceready",function(){
 		
 	  $.ajax({
 		  type: "POST",
-		  url: "http://192.168.1.178/icascatalogo/buscarvans.php",
+		  url: "http://192.168.1.178/icascatalogo/buscarnike.php",
 		  data: "modelo=vans",
 		  error: function(){
 		   alert ("no se pudo conectar al servidor");
